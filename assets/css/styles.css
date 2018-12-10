@@ -1,0 +1,48 @@
+html {
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  font-family: "helvetica neue";
+  text-align: center;
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  font-size: 2rem;
+  display: flex;
+  flex: 1;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.clock {
+  width: 40rem;
+  height: 40rem;
+  border: 40px double #7bc3ed;
+  border-radius: 50%;
+  margin: 50px auto;
+  position: relative;
+  padding: 1rem;
+}
+
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-6px);
+  /* account for the height of the clock hands */
+}
+
+.hand {
+  width: 50%;
+  height: 12px;
+  background: #a2ffc8;
+  position: absolute;
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg);
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.42, 0, 0.72, 2.15);
+}
+
+/*# sourceMappingURL=styles.css.map */
